@@ -12,7 +12,7 @@ environment and reference in your ledger source files.
 If you are maintaining your ledger files in git, it's easiest just to
 add Pineapple Future as a git submodule like so:
 
-    $ git submodule add http://srv.labdroid.net:3000/green/pineapple-future.git
+    $ git submodule add git@github.com:/atgreen/pineapple-future.git
 
 Now create a ledger file like this:
 

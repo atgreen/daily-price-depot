@@ -54,7 +54,7 @@ Data sets
 
 ### Fiat Currency Exchange Rates
 
-Pineapple Future currently contains currency exchange data for 155
+Pineapple Future contains currency exchange data for 155
 currencies. Look for these under `data/fiat`. All exchange rates are
 relative to USD. For the purpose of financial planning, we assume that
 all rates are transitive, meaning that if you are working in currency

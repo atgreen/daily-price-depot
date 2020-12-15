@@ -73,6 +73,9 @@ Pineapple Future currently contains a limited number of daily closing
 equity prices under `data/equity`. Feel free to submit PRs or Issues
 asking for others.
 
+Equity names are all of the form `SYMBOL.EXCHANGE` in order to avoid
+name clashes, for example `IBM.NYSE` and `MSFT.NASDAQ`.
+
 ### Commodity Prices
 
 Gold, silver, and other commodity prices can be found in USD under

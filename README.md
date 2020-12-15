@@ -61,10 +61,25 @@ all rates are transitive, meaning that if you are working in currency
 AAA, and asking ledger to do things in currency BBB, ledger will
 convert AAA to BBB through USD.
 
+### Equity Prices
+
+Pineapple Future currently contains a limited number of daily closing
+equity prices under `data/equity`. Feel free to submit PRs or Issues
+asking for others.
+
+### Commodity Prices
+
+Gold, silver, and other commodity prices can be found in USD under
+`data/commodity`.
+
+
 Author and License
 -------------------
 
-Pineapple Future was conceived of and implemented by [Anthony Green](https://github.com/atgreen). All files in the Pineapple Future, including scripts, programs, documentation and data files are distributed under the terms of the GNU General Public License,
+Pineapple Future was created by [Anthony
+Green](https://github.com/atgreen). All files in the Pineapple Future,
+including scripts, programs, documentation and data files are
+distributed under the terms of the GNU General Public License,
 Version 3. See
 [COPYING](https://raw.githubusercontent.com/atgreen/pineapple-future/master/COPYING)
 for details.

@@ -1,7 +1,7 @@
 # Pineapple Future
 
 Pineapple Future is a convenient and trusted source of daily market
-data for ledger-cli based plain text accounting.
+data for [ledger-cli](https://ledger-cli.org) based plain text accounting.
 
 How to use it
 --------------
@@ -57,6 +57,9 @@ Now generate a report:
 
 Data sets
 --------------
+
+All data sets are updated daily, as Pineapple Future is oriented
+towards long-term planners and investors, not for active traders.
 
 ### Fiat Currency Exchange Rates
 

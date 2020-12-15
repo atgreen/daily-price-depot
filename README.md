@@ -1,13 +1,19 @@
 # Pineapple Future
 
-Pineapple Future is a convenient and trusted source of data for
-ledger-cli based plain text accounting.
+Pineapple Future is a convenient and trusted source of daily market
+data for ledger-cli based plain text accounting.
 
 How to use it
 --------------
 
-Pineapple Future is a git repo that you clone to your local work
-environment and reference in your ledger source files.
+Pineapple Future is a git repo that you clone into your local work
+environment, and reference in your ledger source files.
+
+The idea behind Pineapple Future is that there's little value in all
+ledger users having to individually figure out how to collect and
+present market data in ledger price format. It would be better to
+collaborate on data collection and share this data on a common
+platform, ready to consume.
 
 If you are maintaining your ledger files in git, it's easiest just to
 add Pineapple Future as a git submodule like so:

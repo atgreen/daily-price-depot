@@ -236,7 +236,6 @@
     (when (probe-file filename)
       (sleep 13) ;; Rate limit to 5 requests per minute
       (let ((exchange (fetch-exchange sym)))
-        (print exchange)
         (handler-case
             (let ((json (cdar (json:decode-json-from-string exchange))))
               (with-open-file (stream filename :direction :output :if-exists :append)
@@ -246,7 +245,7 @@
                         (cdr (assoc :|5. *EXCHANGE *RATE| json)))))
           (error (c)
             (format t "ERROR: ~A~%" c)
-            (format t history)))))))
+            (format t exchange)))))))
 
 (defun pull-history ()
   (dolist (currency +iso-4217-currency-codes+)

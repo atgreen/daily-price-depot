@@ -23,7 +23,7 @@
 (ql:quickload :flexi-streams)
 
 ;; We are normalizing on USD, so it does not appear in this list.
-(setf +iso-4217-currency-codes+
+(defparameter +iso-4217-currency-codes+
   '("AED"  ;	United Arab Emirates Dirham
     "AFN"  ;	Afghanistan Afghani
     "ALL"  ;	Albania Lek
@@ -185,8 +185,8 @@
     "ZMW"  ;	Zambia Kwacha
     "ZWD"));	Zimbabwe Dollar
 
-(defparam +alphavantage-api-uri+ "https://www.alphavantage.co/query")
-(defparam +alphavantage-api-key+ (uiop:getenv "ALPHAVANTAGE_API_KEY"))
+(defparameter +alphavantage-api-uri+ "https://www.alphavantage.co/query")
+(defparameter +alphavantage-api-key+ (uiop:getenv "ALPHAVANTAGE_API_KEY"))
 
 (defun fetch-history (currency)
   (format t "Fetching historical ~A rates.~%" currency)

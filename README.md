@@ -1,19 +1,19 @@
-# Pineapple Future
+# Daily Price Depot
 
-Pineapple Future is a convenient and trusted source of daily market
+Daily Price Depot is a convenient and trusted source of daily market
 data for [ledger](https://ledger-cli.org) based plain text accounting.
 
 How to use it
 --------------
 
-Pineapple Future is a git repo containing market data files and the
+Daily Price Depot is a git repo containing market data files and the
 scripts used to generate them. Simply clone the repo into your local
 work environment and reference the data files in your ledger source.
 
 If you are maintaining your ledger files in git, it's easiest just to
-add Pineapple Future as a git submodule like so:
+add Daily Price Depot as a git submodule like so:
 
-    $ git submodule add https://github.com/atgreen/pineapple-future.git
+    $ git submodule add https://github.com/atgreen/daily-price-depot.git
 
 Now create a ledger file like this:
 
@@ -24,8 +24,8 @@ Now create a ledger file like this:
         alias $
 
     ; Include the data files that we need.
-    include pineapple-future/data/fiat/CAD.db
-    include pineapple-future/data/fiat/EUR.db
+    include fingit-data/data/fiat/CAD.db
+    include fingit-data/data/fiat/EUR.db
 
     2020/12/14 * USD savings account
         Assets:USD Savings                     1000 USD
@@ -53,12 +53,12 @@ Now generate a report:
 Data sets
 --------------
 
-All data sets are updated daily, as Pineapple Future is oriented
+All data sets are updated daily, as Daily Price Depot is oriented
 towards long-term planners and investors, not for active traders.
 
 ### Fiat Currency Exchange Rates
 
-Pineapple Future contains currency exchange data for 155 currencies.
+Daily Price Depot contains currency exchange data for 155 currencies.
 Look for these under `data/fiat`. All exchange rates are relative to
 USD. For the purpose of financial planning, we assume that all rates
 are transitive, meaning that if you are working in currency AAA, and
@@ -68,7 +68,7 @@ years.
 
 ### Equity Prices
 
-Pineapple Future currently contains a limited number of daily closing
+Daily Price Depot currently contains a limited number of daily closing
 equity prices under `data/equity`. The historical data goes back no
 more than seven years. Feel free to submit PRs or Issues asking for
 others.
@@ -86,12 +86,12 @@ Gold, silver, and other commodity prices can be found in USD under
 Author and License
 -------------------
 
-Pineapple Future was created by [Anthony
-Green](https://github.com/atgreen). All files in the Pineapple Future,
-including scripts, programs, documentation and data files are
+Daily Price Depot was created by [Anthony
+Green](https://github.com/atgreen). All files in the Daily Price
+Depot, including scripts, programs, documentation and data files are
 distributed under the terms of the GNU General Public License,
 Version 3. See
-[COPYING3](https://github.com/atgreen/pineapple-future/blob/master/COPYING3)
+[COPYING3](https://github.com/atgreen/daily-price-depot/blob/master/COPYING3)
 for details.
 
 

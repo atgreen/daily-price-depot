@@ -59,7 +59,8 @@
 
 (defun equity-currency (equity)
   (let ((epair (split-sequence:split-sequence #\. equity)))
-    (if (string= (car (cdr epair)) "TSX")
+    (if (or (string= (car (cdr epair)) "TSX")
+            (string= (car (cdr epair)) "CADFUNDS"))
         "CAD"
         "USD")))
 
@@ -84,7 +85,7 @@
 (defun fetch-price (equity)
   (format t "Fetching closing price for ~A." equity)
   (let ((parameters `(("function" . "GLOBAL_QUOTE")
-                      ("symbol" . ,(car (split-sequence:split-sequence #\. equity)))
+                      ("symbol" . ,(transform-equity-symbol equity))
                       ("apikey" . ,+alphavantage-api-key+))))
     (octets-to-string
      (drakma:http-request +alphavantage-api-uri+

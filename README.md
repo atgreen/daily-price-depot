@@ -91,7 +91,7 @@ Green](https://github.com/atgreen). All files in the Pineapple Future,
 including scripts, programs, documentation and data files are
 distributed under the terms of the GNU General Public License,
 Version 3. See
-[COPYING](https://raw.githubusercontent.com/atgreen/pineapple-future/master/COPYING)
+[COPYING](https://github.com/atgreen/pineapple-future/blob/master/COPYING3)
 for details.
 
 

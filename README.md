@@ -1,19 +1,14 @@
 # Pineapple Future
 
 Pineapple Future is a convenient and trusted source of daily market
-data for [ledger-cli](https://ledger-cli.org) based plain text accounting.
+data for [ledger](https://ledger-cli.org) based plain text accounting.
 
 How to use it
 --------------
 
-Pineapple Future is a git repo that you clone into your local work
-environment, and reference in your ledger source files.
-
-The idea behind Pineapple Future is that there's little value in all
-ledger users having to individually figure out how to collect and
-present market data in ledger price format. It would be better to
-collaborate on data collection and share this data on a common
-platform, ready to consume.
+Pineapple Future is a git repo containing market data and the scripts
+used to generate them. Simply clone the repo into your local work
+environment and reference the data files in your ledger source.
 
 If you are maintaining your ledger files in git, it's easiest just to
 add Pineapple Future as a git submodule like so:
@@ -78,8 +73,9 @@ equity prices under `data/equity`. The historical data goes back no
 more than seven years. Feel free to submit PRs or Issues asking for
 others.
 
-Equity names are all of the form `SYMBOL.EXCHANGE` in order to avoid
-name clashes, for example `IBM.NYSE` and `MSFT.NASDAQ`.
+Equity names are of the form `SYMBOL.EXCHANGE` in order to avoid name
+clashes (eg. `IBM.NYSE` and `MSFT.NASDAQ`). Equities are priced in
+their native currency.
 
 ### Commodity Prices
 

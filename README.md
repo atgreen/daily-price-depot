@@ -63,18 +63,20 @@ towards long-term planners and investors, not for active traders.
 
 ### Fiat Currency Exchange Rates
 
-Pineapple Future contains currency exchange data for 155
-currencies. Look for these under `data/fiat`. All exchange rates are
-relative to USD. For the purpose of financial planning, we assume that
-all rates are transitive, meaning that if you are working in currency
-AAA, and asking ledger to do things in currency BBB, ledger will
-convert AAA to BBB through USD.
+Pineapple Future contains currency exchange data for 155 currencies.
+Look for these under `data/fiat`. All exchange rates are relative to
+USD. For the purpose of financial planning, we assume that all rates
+are transitive, meaning that if you are working in currency AAA, and
+asking ledger to do things in currency BBB, ledger will convert AAA to
+BBB through USD. The historical data goes back no more than seven
+years.
 
 ### Equity Prices
 
 Pineapple Future currently contains a limited number of daily closing
-equity prices under `data/equity`. Feel free to submit PRs or Issues
-asking for others.
+equity prices under `data/equity`. The historical data goes back no
+more than seven years. Feel free to submit PRs or Issues asking for
+others.
 
 Equity names are all of the form `SYMBOL.EXCHANGE` in order to avoid
 name clashes, for example `IBM.NYSE` and `MSFT.NASDAQ`.

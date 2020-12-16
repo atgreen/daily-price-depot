@@ -6,14 +6,14 @@ data for [ledger](https://ledger-cli.org) based plain text accounting.
 How to use it
 --------------
 
-Pineapple Future is a git repo containing market data and the scripts
-used to generate them. Simply clone the repo into your local work
-environment and reference the data files in your ledger source.
+Pineapple Future is a git repo containing market data files and the
+scripts used to generate them. Simply clone the repo into your local
+work environment and reference the data files in your ledger source.
 
 If you are maintaining your ledger files in git, it's easiest just to
 add Pineapple Future as a git submodule like so:
 
-    $ git submodule add git@github.com:/atgreen/pineapple-future.git
+    $ git submodule add http://github.com/atgreen/pineapple-future.git
 
 Now create a ledger file like this:
 

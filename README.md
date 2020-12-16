@@ -13,7 +13,7 @@ work environment and reference the data files in your ledger source.
 If you are maintaining your ledger files in git, it's easiest just to
 add Pineapple Future as a git submodule like so:
 
-    $ git submodule add http://github.com/atgreen/pineapple-future.git
+    $ git submodule add https://github.com/atgreen/pineapple-future.git
 
 Now create a ledger file like this:
 

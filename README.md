@@ -13,9 +13,9 @@ work environment and reference the data files in your ledger source.
 If you are maintaining your ledger files in git, it's easiest just to
 add Daily Price Depot as a git submodule like so:
 
-    $ git submodule add https://github.com/atgreen/daily-price-depot.git
+    $ git submodule add --depth 1 https://github.com/atgreen/daily-price-depot.git
 
-Now create a ledger file like this:
+Now reference the data in your ledger files like so:
 
     ; -*- ledger -*-
 
@@ -24,8 +24,8 @@ Now create a ledger file like this:
         alias $
 
     ; Include the data files that we need.
-    include fingit-data/data/fiat/CAD.db
-    include fingit-data/data/fiat/EUR.db
+    include daily-price-depot/data/fiat/CAD.db
+    include daily-price-depot/data/fiat/EUR.db
 
     2020/12/14 * USD savings account
         Assets:USD Savings                     1000 USD
@@ -49,6 +49,9 @@ Now generate a report:
                 CAD-3829  Equity:Opening Balances
     --------------------
                        0
+
+And refresh content daily with `git submodule update`.
+
 
 Data sets
 --------------

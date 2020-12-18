@@ -85,6 +85,13 @@ their native currency.
 Gold, silver, and other commodity prices can be found in USD under
 `data/commodity`.
 
+### Fund Prices
+
+Daily Price Depot currently contains a limited number of daily closing
+fund prices under `data/fund`. The historical data goes back no
+more than seven years. Feel free to submit PRs or Issues asking for
+others.
+
 
 Author and License
 -------------------

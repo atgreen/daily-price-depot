@@ -24,35 +24,8 @@
 (ql:quickload :split-sequence)
 (ql:quickload :cl-date-time-parser)
 
-;; Equities
-(defparameter +equities+
-  '(
-    "AAPL.NASDAQ"
-    "AC.TSX"
-    "ACB.TSX"
-    "BAC.NYSE"
-    "BMO.TSX"
-    "BNS.TSX"
-    "CJT.TSX"
-    "CM.TSX"
-    "CSCO.NASDAQ"
-    "DOL.TSX"
-    "F.NYSE"
-    "FB.NASDAQ"
-    "IBM.NYSE"
-    "INTC.NASDAQ"
-    "LAZR.NASDAQ"
-    "MSFT.NASDAQ"
-    "PFE.NYSE"
-    "RY.TSX"
-    "SNOW.NYSE"
-    "SPCE.NYSE"
-    "T.NYSE"
-    "TD.TSX"
-    "TSLA.NASDAQ"
-    "UAL.NASDAQ"
-    "WFC.NYSE"
-    ))
+;; Read the equities list.
+(defparameter +equities+ (uiop:read-file-lines "equities.txt"))
 
 (defparameter +alphavantage-api-uri+ "https://www.alphavantage.co/query")
 (defparameter +alphavantage-api-key+ (uiop:getenv "ALPHAVANTAGE_API_KEY"))

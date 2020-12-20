@@ -20,8 +20,8 @@ Now reference the data in your ledger files like so:
     ; -*- ledger -*-
 
     ; Tell ledger that the currency symbol '$' refers to Canadian dollars.
-    commodity CAD
-        alias $
+    commodity $
+        alias CAD
 
     ; Include the data files that we need.
     include daily-price-depot/data/fiat/CAD.db
@@ -42,11 +42,11 @@ Now reference the data in your ledger files like so:
 Now generate a report:
 
     $ ledger -f book.ledger --exchange $ bal
-                 CAD3829  Assets
-                 CAD1549    EUR Savings
-                 CAD1000    Local Currency Savings
-                 CAD1280    USD Savings
-                CAD-3829  Equity:Opening Balances
+                 $3829  Assets
+                 $1549    EUR Savings
+                 $1000    Local Currency Savings
+                 $1280    USD Savings
+                $-3829  Equity:Opening Balances
     --------------------
                        0
 
